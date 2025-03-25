@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+.bg-earth-brown{
+  background-color: #806947;
+}
+
+.bg-farm-green{
+  background-color: #33691e;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}

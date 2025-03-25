@@ -1,0 +1,147 @@
+/* Full-Screen Container Styling */
+.chatbot-container {
+  width: 90%; /* Makes it take up almost the full screen */
+  max-width: 1200px; /* Ensures it doesn’t get too stretched on large screens */
+  margin: 40px auto;
+  padding: 30px; /* Increased padding for better spacing */
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Section styling */
+.image-upload-section,
+.question-section,
+.response-section {
+  margin: 20px 0;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Headings */
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+h3 {
+  color: #555;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+/* Input fields */
+input[type="file"],
+input[type="text"] {
+  width: 100%; /* Full width inside the container */
+  max-width: 800px; /* Limits input width for readability */
+  padding: 14px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* Buttons */
+button {
+  margin-top: 15px;
+  padding: 14px 22px; /* Increased padding for a bigger button */
+  border: none;
+  border-radius: 8px; /* More rounded edges */
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Centering Buttons & Adding Space */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the buttons */
+  gap: 20px; /* Adds space between buttons */
+  margin-top: 20px;
+}
+
+/* Response Section - Improved Readability */
+.response-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f1f9ff; /* Light blue background for visibility */
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Aligns text for better readability */
+  max-width: 1000px; /* Ensures it doesn’t get too stretched */
+  margin: 30px auto; /* Centers the response section */
+}
+
+/* Response Heading */
+.response-section h3 {
+  font-size: 22px;
+  color: #0056b3; /* Dark blue for visibility */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Response Text */
+.response-section p {
+  font-size: 18px;
+  color: #333;
+  background: #ffffff; /* White background for text contrast */
+  padding: 15px;
+  border-left: 4px solid #007bff; /* Adds a left border for emphasis */
+  border-radius: 5px;
+  line-height: 1.6;
+  max-width: 950px; /* Keeps text readable on large screens */
+  margin: auto;
+  text-align: justify; /* Makes text easier to read */
+}
+
+/* Scrollable Response for Large Text */
+.response-box {
+  max-height: 250px; /* Limits height to prevent UI stretching */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding-right: 10px;
+}
+
+/* Fully Responsive */
+@media (max-width: 1024px) {
+  .chatbot-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .chatbot-container {
+    width: 98%;
+    padding: 20px;
+  }
+
+  input[type="file"],
+  input[type="text"] {
+    max-width: 100%;
+  }
+
+  .response-section {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .response-section p {
+    font-size: 16px;
+  }
+}
